@@ -1,16 +1,121 @@
-/* @import url('https://fonts.googleapis.com/css2?family=jost:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=jost:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#bg-video {
+/* Adding Background Image */
+body{
+  font-family: "Jost", serif;
+  min-height: 100vh;
+  background: url(https://shorturl.at/nkayO) no-repeat center center/cover;
+}
+
+/* Home Page Video */
+/* .video-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
+} */
+/* #bg-video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: -1;
+} */
+
+/* NavBar 
+ Make it blury and Navbar content in center */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.018); /* semi-transparent */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  z-index: 1;
+}
+
+/* NavBar Container 
+ to keep the design neet on larger screens */
+.navbar-container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1600px;
+}
+
+/* Nav Bar Logo TastyBites on Nav Bar */
+.navbar-logo{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2E2E2E;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* NavBar Menu NavBar Content Visible in One Line */
+.navbar-container .navbar-menu{
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-container .navbar-menu li a {
+  text-decoration: none;
+  color: #520e0e; /* Nav menu Content Color*/
+  font-size: 1.3rem;
+  font-weight: 500; 
+  padding: 3px 20px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+}
+
+/* Hover Effect of Menu Content*/
+.navbar-container .navbar-menu li a:hover{
+  color: red;
+  background: rgb(234, 208, 36);
+  border: 2px solid #fff;
+}
+
+/* Nav Bar toggle button */
+.navbar-toggle{
+  display: none;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: #520e0e;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Web page*/
+@media (max-width: 880px){
+  .navbar {
+    backdrop-filter: none;
+  }
+  .navbar-container .navbar-menu{
+    
+  }
 }
