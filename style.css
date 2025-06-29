@@ -44,9 +44,11 @@ body{
 .navbar-logo{
   font-size: 2rem;
   font-weight: 600;
-  color: #2E2E2E;
+  color: #550527;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  left: 35px;
 }
 
 /* NavBar Menu NavBar Content Visible in One Line */
@@ -59,13 +61,13 @@ body{
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color: #520e0e; /* Nav menu Content Color*/
+  color: #550527; /* Nav menu Content Color*/
   font-size: 1.3rem;
   font-weight: 500; 
   padding: 3px 20px;
   border-radius: 20px;
   border: 2px solid transparent;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   white-space: nowrap;
 }
 
@@ -100,6 +102,7 @@ body{
   .navbar {
     backdrop-filter: none;
   }
+
   .navbar-container .navbar-menu{
     display: none;
     flex-direction: column;
@@ -115,7 +118,7 @@ body{
     backdrop-filter: blur(7px);;
   }
 
-  /* after js */
+  /* Active NavBar Menu */
   .navbar-container .navbar-menu.active{
     display: flex; 
   }
@@ -126,7 +129,7 @@ body{
     z-index: 999;
   }
 
-  /* after js */
+  /* Active NavBar Toggle */
   .navbar-toggle.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -153,4 +156,4 @@ body{
     font-size: 1.2rem;
     padding: 3px 15px;
   }
-  }
+}

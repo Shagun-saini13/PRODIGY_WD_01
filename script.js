@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navbarMenu.classList.toggle('active');
     });
 
-    // Handle active menu item and close menu on click
+    // Handle active menu item without closing menu
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             // Remove active from all links
@@ -17,10 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Add active to clicked link
             link.classList.add('active');
-
-            // Close navbar on mobile
-            navbarToggle.classList.remove('active');
-            navbarMenu.classList.remove('active');
         });
     });
 });
