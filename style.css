@@ -13,7 +13,7 @@ body{
 }
 
 /* NavBar 
- Make it blury and Navbar content in center */
+ Make it blury and Navbar Menu items in center */
 .navbar {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ body{
   left: 35px;
 }
 
-/* NavBar Menu NavBar Content Visible in One Line */
+/* NavBar Menu items Visible in One Line */
 .navbar-container .navbar-menu{
   display: flex;
   text-align: center;
@@ -61,7 +61,7 @@ body{
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color: #550527; /* Nav menu Content Color*/
+  color: #550527; /* Nav menu items Color*/
   font-size: 1.3rem;
   font-weight: 500; 
   padding: 3px 20px;
@@ -71,7 +71,7 @@ body{
   white-space: nowrap;
 }
 
-/* Hover Effect of Menu Content*/
+/* Hover Effect of Menu items*/
 .navbar-container .navbar-menu li a:hover,
 .navbar-container .navbar-menu li a.active{
   color: rgb(234, 208, 36);
