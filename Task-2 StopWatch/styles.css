@@ -103,6 +103,7 @@ body{
     color:#cccccc;
 }
 
+/* lap actual time-stamp */
 .time-stamp{
     display: inline-block;
     margin-left: 25px;
