@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* outer circle of StopWatch */
+.outer-circle{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* inner circle of StopWatch */
+.inner-circle{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* StopWatch Count */
+.text{
+    color: white;
+    font-size: 23px;;
+}
+
+.minute{
+    font-size: 43px;
+}
+.sec{
+    font-size: 34px;
+}
+.msec{
+    font-size: 23px;;
+}
+
+/* Reset Play Lap button spacing */
+.button-wrapper{
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Reset Play Lap button size and color */
+.button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Reset Play Lap hover effect on button click*/
+.button:hover{
+    background-color: white;
+    color: black; 
+}
+
+/* laps color */
+.laps{
+    list-style: none;
+    color: white;
+    height: 250px;
+    overflow: auto;
+    position: relative;
+    padding: 30px 0;
+}
+
+.lap-items{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 50px;
+}
+
+/* lap serial number #1 #2 #3... color */
+.number{
+    color:#cccccc;
+}
+
+.time-stamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+/* 10:54 current time of youtube video*/
